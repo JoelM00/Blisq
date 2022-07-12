@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/subStyles.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <title>Rotas do oceano</title>
+</head>
+<body>
+    <div class="float-button">
+        <a class="inside-button" href="#header">
+            <img src="./img/seta-top.svg" alt="seta para o header">
+        </a>
+    </div>
+
+    <header class="sub-header" id="header">
+        <div class="sub-header-container">
+            <div class="sub-header-logo">
+                <a href="https://eeagrants.org/">
+                    <img src="./img/logo.png" alt="Logotipo do ILN">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="menu">
+        <div class="menu-container">
+            <div class="menu-options">
+                <a href="./index.html"><img src="./img/home.svg" alt="pagina principal"></a>
+                <div class="menu-suboptions">
+                    <a class="inside-button" href="#biodiversity">Biodiversidade</a>
+                    <a class="inside-button" href="#civilizations">Civilizações</a>
+                    <a class="inside-button" href="#flavors">Sabores</a>
+                    <a class="inside-button" href="#sports">Desporto Náutico</a>
+                    <a class="inside-button" href="#literature">Literatura e Música Marítima</a>
+                    <a class="inside-button" href="#future">Futuro e Sustentabilidade</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-container-small">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="./index.html"><img src="./img/home.svg" alt="pagina principal"></a>
+                <a class="inside-button"  onclick="closeNav()" href="#biodiversity">Biodiversidade</a>
+                <a class="inside-button"  onclick="closeNav()" href="#civilizations">Civilizações</a>
+                <a class="inside-button"  onclick="closeNav()" href="#flavors">Sabores</a>
+                <a class="inside-button"  onclick="closeNav()" href="#sports">Desporto Náutico</a>
+                <a class="inside-button"  onclick="closeNav()" href="#literature">Literatura e Música Marítima</a>
+                <a class="inside-button"  onclick="closeNav()" href="#future">Futuro e Sustentabilidade</a>
+            </div>
+            <span class="menu-open-button" onclick="openNav()">&#9776;</span>
+        </div>
+    </section>
+
+    <section class="activities">
+        <div class="activity" id="biodiversity">
+            <div class="activity-container" i>
+                <div class="activity-title">
+                    <h3>Atividade</h3>
+                    <h2>A grande caça aos ovos</h2>
+                </div>
+                <div class="activity-slider-container" id="gallery-biodiversity">
+                    <div class="activity-slider">
+                        <img src="./img/atividade.jpg" alt="atividades" class="activity-slider-album">
+                        <img src="./img/atividade.jpg" alt="atividades" class="activity-slider-album">
+                        <img src="./img/atividade.jpg" alt="atividades" class="activity-slider-album">
+                    </div>
+                    <div class="activity-slider-navigation">
+                        <div class="activity-button-right"><img src="./img/seta-dir.svg"></div>
+                        <div class="activity-button-left"><img src="./img/seta-esq.svg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="activity" id="civilizations">
+            <div class="activity-container">
+                <div class="activity-title">
+                    <h3>Atividade</h3>
+                    <h2>A ESCOLA VAI (Ó)MARE</h2>
+                </div>
+                <div class="activity-slider-container" id="gallery-biodiversity">
+                    <div class="activity-slider">
+                        <img src="./img/atividade.jpg" alt="atividades" class="activity-slider-album">
+                        <img src="./img/atividade.jpg" alt="atividades" class="activity-slider-album">
+                        <img src="./img/atividade.jpg" alt="atividades" class="activity-slider-album">
+                    </div>
+                    <div class="activity-slider-navigation">
+                        <div class="activity-button-right"><img src="./img/seta-dir.svg"></div>
+                        <div class="activity-button-left"><img src="./img/seta-esq.svg"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="activity" id="flavors">
+            <div class="activity-container">
+                <div class="activity-title">
+                    <h3>Atividade</h3>
+                    <h2>A grande caça aos ovos</h2>
+                </div>
+                <div class="activity-slider-container" id="gallery-biodiversity">
+                    <div class="activity-slider">
+                        <img src="./img/atividade.jpg" alt="atividades" class="activity-slider-album">
+                        <img src="./img/atividade.jpg" alt="atividades" class="activity-slider-album">
+                        <img src="./img/atividade.jpg" alt="atividades" class="activity-slider-album">
+                    </div>
+                    <div class="activity-slider-navigation">
+                        <div class="activity-button-right"><img src="./img/seta-dir.svg"></div>
+                        <div class="activity-button-left"><img src="./img/seta-esq.svg"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="activity" id="sports">
+            <div class="activity-container">
+                <div class="activity-title">
+                    <h3>Atividade</h3>
+                    <h2>A grande caça aos ovos</h2>
+                </div>
+                <div class="activity-slider-container" id="gallery-biodiversity">
+                    <div class="activity-slider">
+                        <img src="./img/atividade.jpg" alt="atividades" class="activity-slider-album">
+                        <img src="./img/atividade.jpg" alt="atividades" class="activity-slider-album">
+                        <img src="./img/atividade.jpg" alt="atividades" class="activity-slider-album">
+                    </div>
+                    <div class="activity-slider-navigation">
+                        <div class="activity-button-right"><img src="./img/seta-dir.svg"></div>
+                        <div class="activity-button-left"><img src="./img/seta-esq.svg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="activity" id="literature">
+            <div class="activity-container">
+                <div class="activity-title">
+                    <h3>Atividade</h3>
+                    <h2>A grande caça aos ovos</h2>
+                </div>
+                <div class="activity-slider-container" id="gallery-biodiversity">
+                    <div class="activity-slider">
+                        <img src="./img/atividade.jpg" alt="atividades" class="activity-slider-album">
+                        <img src="./img/atividade.jpg" alt="atividades" class="activity-slider-album">
+                        <img src="./img/atividade.jpg" alt="atividades" class="activity-slider-album">
+                    </div>
+                    <div class="activity-slider-navigation">
+                        <div class="activity-button-right"><img src="./img/seta-dir.svg"></div>
+                        <div class="activity-button-left"><img src="./img/seta-esq.svg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="activity" id="future">
+            <div class="activity-container">
+                <div class="activity-title">
+                    <h3>Atividade</h3>
+                    <h2>A grande caça aos ovos</h2>
+                </div>
+                <div class="activity-slider-container" id="gallery-biodiversity">
+                    <div class="activity-slider">
+                        <img src="./img/atividade.jpg" alt="atividades" class="activity-slider-album">
+                        <img src="./img/atividade.jpg" alt="atividades" class="activity-slider-album">
+                        <img src="./img/atividade.jpg" alt="atividades" class="activity-slider-album">
+                    </div>
+                    <div class="activity-slider-navigation">
+                        <div class="activity-button-right"><img src="./img/seta-dir.svg"></div>
+                        <div class="activity-button-left"><img src="./img/seta-esq.svg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-element">
+                <a href="#"><img src="./img/footer-rio-neiva.svg" alt="rio neiva"></a>
+            </div>
+            <div class="footer-element">
+                <div class="footer-element-email">
+                    <a href="mailto:geral@rioneiva.com">geral@rioneiva.com</a>
+                </div>
+                <div class="footer-element-redes">
+                    <a href="http://www.instagram.com"><img src="./img/footer-instagram.svg" alt="instagram"></a>
+                    <a href="http://www.facebook.com"><img src="./img/footer-facebook.svg" alt="facebook"></a>
+                </div>
+                <div class="footer-element-financiamento">
+                    Projeto financiado pela Islândia, Liechtenstein e Noruega, através dos EEA Grants.
+                </div>
+            </div>
+            <div class="footer-element">
+                <a href="https://blisq.pt">
+                    <img src="./img/footer-blisq.svg" alt="blisq">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
