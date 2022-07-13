@@ -176,6 +176,10 @@ h2 {
         justify-content: center;
     }
 
+    .activity {
+        background: linear-gradient(to top, #f8f8f8 0%,#f8f8f8 60%,white 60%,white 100%);
+    }
+
     .activity-slider-navigation {
         width: 112%;
         top: 46%;
@@ -191,6 +195,9 @@ h2 {
         flex-wrap: wrap;
         max-width: 600px;
         justify-content: center;
+    }
+    .activity {
+        background: linear-gradient(to top, #f8f8f8 0%,#f8f8f8 60%,white 60%,white 100%);
     }
 }
 @media (max-width: 1050px) {
@@ -219,6 +226,9 @@ h2 {
 }
 
 @media (max-width: 850px) {
+    .activity {
+        background: linear-gradient(to top, #f8f8f8 0%,#f8f8f8 50%,white 50%,white 100%);
+    }
     .activity-slider-navigation {
         width: 121%;
         top: 46%;
