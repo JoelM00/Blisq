@@ -212,6 +212,11 @@ body {
     padding-top: 200px;
 }
 
+.our-solutions-title {
+    display: flex;
+    justify-content: space-between;
+}
+
 .our-solutions h2 {
     font-family: 'Chakra Petch';
     font-style: normal;
@@ -221,6 +226,37 @@ body {
     letter-spacing: 0.14em;
 
     color: #A9A8A5;
+}
+
+.our-solutions-grid {
+    display: flex;
+
+}
+
+.our-solutions-card {
+    width: 425px;
+    height: 500px;
+    background: url('../img/card-back.jpg');
+    padding: 20px;
+}
+
+.our-solutions-card h2 {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 98%;
+    letter-spacing: 0.14em;
+}
+
+.our-solutions-card img {
+    width: 343px;
+    height: 335px;
+    margin: 0 auto;
+}
+
+.direita {
+    transform: rotate(180deg);
 }
 
 .footer-container {
