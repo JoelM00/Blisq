@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url("../fonts/ChakraPetch-Regular.ttf");
+}
+
+/*Global configs*/
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    background: url('../img/header-back.png') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+
+.header-language {
+}
+
+.header-language a {
+    text-decoration: none;
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-size: 30px;
+    color: #00B5AD;
+}
+
+.header-language a:focus {
+    color: #fff;
+    text-decoration: underline;
+ }
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+}
+
+.header-title {
+    max-width: 440px;
+}
+
+.header-logo {
+    padding-left: 40px;
+}
+
+.header-title p {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 99.5%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.header-title h2 {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 98.5%;
+    color: #00B5AD;
+}
+
+
+/*About*/
+.about {
+    position: relative;
+    background: url('../img/about-concrete.jpg') no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.about::before {
+    content: "Os nossos projetos";
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    width: 675px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 85.5%;
+    opacity: 0.4;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+    color: transparent;
+    z-index: 2;
+
+    
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 85.5%;
+
+    mix-blend-mode: normal;
+    opacity: 0.2;
+}
+
+.about-container {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 125px;
+}
+
+.about-content {
+    max-width: 645px;
+}
+
+.about-content span {
+    width: 120px;
+    height: 5px;
+    background-color: #00b5ad;
+    display: block;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+
+.about-content h2 {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 154.5%;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+    color: #A9A8A5;
+}
+
+.about-content p {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 154.5%;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+/*Solutions*/
+.solutions {
+    position: relative;
+    background: url('../img/solutions-back.jpg') no-repeat;
+    background-size: cover;
+    height: 825px;
+}
+
+.solutions-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.solutions-container h2 {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 108.5%;
+
+    color: #FFFFFF;
+
+    padding-top: 250px;
+    text-align: center;
+}
+
+.solutions-tasks {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.solutions-tasks img {
+    padding: 0 30px;
+}
+
+
+.bottom-page {
+    position: relative;
+    background: #141414;
+    height: 1450px;
+}
+
+.our-solutions {
+    height: 985px;
+}
+
+.our-solutions-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+.our-solutions h2 {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 154.5%;
+    letter-spacing: 0.14em;
+
+    color: #A9A8A5;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top-element {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top-element:last-child {
+    width: 50%;
+    padding-top: 20px;
+}
+
+.footer-subelement p {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 154.5%;
+
+    color: #FFFFFF;
+    padding: 30px 0;
+}
+
+.footer-top h2 {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 154.5%;
+    letter-spacing: 0.14em;
+
+    color: #00B5AD;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom-element:first-child {
+    display: flex;
+    padding-left: 80px;
+}
+
+.footer-bottom-element:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.footer-bottom-element-column {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+}
+
+.footer-bottom-element a {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 156%;
+    /* or 25px */
+
+    text-transform: uppercase;
+
+    color: #00B5AD;
+}
+
+.bottom-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/our-solutions-building.png') no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+    mix-blend-mode: color-dodge;
+}
