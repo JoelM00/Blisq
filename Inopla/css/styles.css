@@ -5,7 +5,7 @@
 
 /*Global configs*/
 body {
-    max-width: 1920px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -27,22 +27,6 @@ body {
     justify-content: space-between;
     padding: 70px 0;
 }
-
-.header-language {
-}
-
-.header-language a {
-    text-decoration: none;
-    font-family: 'Chakra Petch';
-    font-style: normal;
-    font-size: 30px;
-    color: #00B5AD;
-}
-
-.header-language a:focus {
-    color: #fff;
-    text-decoration: underline;
- }
 
 .header-content {
     display: flex;
@@ -75,6 +59,8 @@ body {
     font-size: 80px;
     line-height: 98.5%;
     color: #00B5AD;
+    
+    margin-top: 20px;
 }
 
 
@@ -92,15 +78,6 @@ body {
     right: 0;
     bottom: -100px;
     width: 675px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 120px;
-    line-height: 85.5%;
-    opacity: 0.4;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #ffffff;
-    color: transparent;
-    z-index: 2;
 
     
     font-family: 'Chakra Petch';
@@ -108,9 +85,14 @@ body {
     font-weight: 700;
     font-size: 120px;
     line-height: 85.5%;
+    text-transform: uppercase;
+
+    -webkit-text-stroke: 1px #ffffff;
+    color: transparent;
 
     mix-blend-mode: normal;
     opacity: 0.2;
+    z-index: 1;
 }
 
 .about-container {
@@ -191,11 +173,22 @@ body {
     padding: 50px;
 }
 
-.solutions-tasks img {
+.solutions-task {
     padding: 0 30px;
 }
 
+.solutions-task h2 {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 154.5%;
+    text-transform: uppercase;
 
+    padding-top: 15px;
+}
+
+/*Bottom page*/
 .bottom-page {
     position: relative;
     background: #141414;
@@ -207,6 +200,8 @@ body {
 }
 
 .our-solutions-container {
+    position: relative;
+    z-index: 1;
     max-width: 1400px;
     margin: 0 auto;
     padding-top: 200px;
@@ -215,6 +210,10 @@ body {
 .our-solutions-title {
     display: flex;
     justify-content: space-between;
+}
+
+.our-solutions-arrows a {
+    padding: 0 10px;
 }
 
 .our-solutions h2 {
@@ -228,17 +227,46 @@ body {
     color: #A9A8A5;
 }
 
-.our-solutions-grid {
-    display: flex;
-
+.our-solutions-grid a {
+    text-decoration: none;
 }
 
 .our-solutions-card {
+    position: relative;
     width: 425px;
     height: 500px;
     background: url('../img/card-back.jpg');
     padding: 20px;
+
 }
+.our-solutions-card .our-solutions-card-more {
+    display: none;
+}
+
+.our-solutions-card:hover .our-solutions-card-more {
+   display: flex;
+   align-items: center;
+   position: absolute;
+   top: 70%;
+   left: -20%;
+}
+
+.our-solutions-card-more {
+    background: #00B5AD;
+    width: 170px;
+    height: 65px;
+    padding: 30px;
+
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 154.5%;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
 
 .our-solutions-card h2 {
     font-family: 'Chakra Petch';
@@ -249,16 +277,22 @@ body {
     letter-spacing: 0.14em;
 }
 
-.our-solutions-card img {
+.our-solutions-card-img {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.our-solutions-card-img img {
     width: 343px;
     height: 335px;
     margin: 0 auto;
 }
 
-.direita {
+.arrow-right img {
     transform: rotate(180deg);
 }
 
+/*Footer*/
 .footer-container {
     max-width: 1400px;
     margin: 0 auto;
@@ -328,8 +362,6 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 156%;
-    /* or 25px */
-
     text-transform: uppercase;
 
     color: #00B5AD;
@@ -346,4 +378,62 @@ body {
     background-size: cover;
     z-index: 1;
     mix-blend-mode: color-dodge;
+}
+
+
+/*Menu*/
+.menu {
+    background-color: #00B5AD;
+    display: none;
+}
+
+.active {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 100%;
+}
+
+.menu-container {
+    padding: 60px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-close p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 154.5%;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.menu-options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-options li {
+    padding: 10px 15px;
+}
+
+.menu-container a {
+    font-family: 'Chakra Petch';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.14em;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu-container a:hover {
+    text-decoration: underline;
 }

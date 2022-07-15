@@ -9,10 +9,33 @@
     <link rel="stylesheet" href="./css/styles.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
     <title>Inopla</title>
 </head>
 <body>
+
+    <div class="menu">
+        <div class="menu-container">
+            <ul class="menu-options">
+                <li><a href="#">quem somos</a></li>
+                <li><a href="#">produtos standard</a></li>
+                <li><a href="#">peças especiais</a></li>
+                <li><a href="#">perfilaria de alumínio strow</a></li>
+                <li><a href="#">apoio técnico</a></li>
+                <li><a href="#">corte a laser</a></li>
+                <li><a href="#">produção</a></li>
+                <li><a href="#">produtos</a></li>
+                <li><a href="#">contactos</a></li>
+            </ul>
+            <a href="#" class="menu-button-close">
+                <img src="./img/close.svg" alt="close">
+                <p class="menu-close">close</p>
+            </a>
+        </div>
+    </div>
+
+
     <header class="header">
         <div class="header-container">
             <div class="header-menu">
@@ -20,7 +43,7 @@
                     <img src="./img/mini-logo.svg" alt="logo">
                 </div>
                 <div class="header-button">
-                    <a href="#butao">
+                    <a href="#" class="menu-button-open">
                         <img src="./img/header-button.svg" alt="Botao do menu">
                     </a>
                 </div>
@@ -52,10 +75,22 @@
         <div class="solutions-container">
             <h2>SOLUÇÕES PERSONALIZADAS</h2>
             <div class="solutions-tasks">
-                <img src="./img/solutions-laser.svg" alt="laser">
-                <img src="./img/solutions-corte.svg" alt="corte">
-                <img src="./img/solutions-quinagem.svg" alt="quinagem">
-                <img src="./img/solutions-pintura.svg" alt="pintura">
+                <div class="solutions-task">
+                    <img src="./img/solutions-laser.svg" alt="laser">
+                    <h2>Laser</h2>
+                </div>
+                <div class="solutions-task">
+                    <img src="./img/solutions-corte.svg" alt="corte">
+                    <h2>Corte</h2>
+                </div>
+                <div class="solutions-task">
+                    <img src="./img/solutions-pintura.svg" alt="pintura">
+                    <h2>Pintura</h2>
+                </div>
+                <div class="solutions-task">
+                    <img src="./img/solutions-quinagem.svg" alt="quinagem">
+                    <h2>Quinagem</h2>
+                </div>
             </div>
         </div>
     </section>
@@ -66,43 +101,92 @@
                 <div class="our-solutions-title">
                     <h2>AS NOSSAS SOLUÇÕES</h2>
                     <div class="our-solutions-arrows">
-                        <a href="">
-                            <img class="esquerda" src="./img/arrow.svg" alt="seta">
+                        <a href="" class="arrow-left">
+                            <img src="./img/arrow.svg" alt="seta esquerda">
                         </a>
-                        <a href="">
-                            <img class="direita" src="./img/arrow.svg" alt="seta">
+                        <a href="" class="arrow-right">
+                            <img src="./img/arrow.svg" alt="seta direita">
                         </a>
                     </div>
                 </div>
-                <div class="our-solutions-grid">
-                    <div class="our-solutions-card">
-                        <h2>Produção</h2>
-                        <img src="./img/solution-5.png" alt="produção">
-                    </div>
-                    <div class="our-solutions-card">
-                        <h2>Produtos</h2>
-                        <img src="./img/solution-6.png" alt="produtos">
-                    </div>
-                    <div class="our-solutions-card">
-                        <h2>Produtos standard</h2>
-                        <img src="./img/solution-7.png" alt="produtos standard">
-                    </div>
-                    <div class="our-solutions-card">
-                        <h2>Apoio técnico</h2>
-                        <img src="./img/solution-1.png" alt="apoio técnico">
-                    </div>
-                    <div class="our-solutions-card">
-                        <h2>Peças especiais</h2>
-                        <img src="./img/solution-3.png" alt="peças especiais">
-                    </div>
-                    <div class="our-solutions-card">
-                        <h2>Perfilaria de alúminio strow</h2>
-                        <img src="./img/solution-2.png" alt="perfilaria de alúminio strow">
-                    </div>
-                    <div class="our-solutions-card">
-                        <h2>Corte a laser</h2>
-                        <img src="./img/solution-4.png" alt="corte a laser">
-                    </div>
+                <div class="our-solutions-grid slider">
+                    <a href="./prodution.html">
+                        <div class="our-solutions-card">
+                            <h2>Produção</h2>
+                            <div class="our-solutions-card-img">
+                                <img src="./img/solution-5.png" alt="produção">
+                            </div>
+                            <span class="our-solutions-card-more">
+                                Saber mais
+                            </span>
+                        </div>
+                    </a>
+                    <a href="./products.html">
+                        <div class="our-solutions-card">
+                            <h2>Produtos</h2>
+                            <div class="our-solutions-card-img">
+                                <img src="./img/solution-6.png" alt="produtos">
+                            </div>
+                            <span class="our-solutions-card-more">
+                                Saber mais
+                            </span>
+                        </div>
+                    </a>
+                    <a href="./standard.html">
+                        <div class="our-solutions-card">
+                            <h2>Produtos standard</h2>
+                            <div class="our-solutions-card-img">
+                                <img src="./img/solution-7.png" alt="produtos standard">
+                            </div>
+                            <span class="our-solutions-card-more">
+                                Saber mais
+                            </span>
+                        </div>
+                    </a>
+                    <a href="./support.html">
+                        <div class="our-solutions-card">
+                            <h2>Apoio técnico</h2>
+                            <div class="our-solutions-card-img">
+                                <img src="./img/solution-1.png" alt="apoio técnico">
+                            </div>
+                            <span class="our-solutions-card-more">
+                                Saber mais
+                            </span>
+                        </div>
+                    </a>
+                    <a href="./special.html">
+                        <div class="our-solutions-card">
+                            <h2>Peças especiais</h2>
+                            <div class="our-solutions-card-img">
+                                <img src="./img/solution-3.png" alt="peças especiais">
+                            </div>
+                            <span class="our-solutions-card-more">
+                               Saber mais
+                            </span>
+                        </div>
+                    </a>
+                    <a href="./aluminum.html">
+                        <div class="our-solutions-card">
+                            <h2>Perfilaria de alúminio strow</h2>
+                            <div class="our-solutions-card-img">
+                                <img src="./img/solution-2.png" alt="perfilaria de alúminio strow">
+                            </div>
+                            <span class="our-solutions-card-more">
+                                Saber mais
+                            </span>
+                        </div>
+                    </a>
+                    <a href="./laser.html">
+                        <div class="our-solutions-card">
+                            <h2>Corte a laser</h2>
+                            <div class="our-solutions-card-img">
+                                <img src="./img/solution-4.png" alt="corte a laser">
+                            </div>
+                            <span class="our-solutions-card-more">
+                                Saber mais
+                            </span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -150,5 +234,6 @@
 
     
     <script src="./js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </body>
 </html>
