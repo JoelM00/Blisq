@@ -1,0 +1,52 @@
+
+.standard {
+    background: #141414;
+    background-size: cover;
+}
+
+.standard-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 150px 0 100px 0;
+}
+
+.standard-content {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.standard-content:nth-child(1){
+    background: url('../img/about-concrete.jpg');
+    background-size: cover;
+}
+.standard-content:nth-child(3) {
+    background: url('../img/about-concrete.jpg');
+    background-size: cover;
+}
+
+.standard-content-title {
+    max-width: 200px;
+}
+
+.standard-content-title h2 {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 118.5%;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    
+    color: #A9A8A5;
+}
+
+.standard-content-title span {
+    color: #00B5AD;
+}
+
+.standard-content-images img {
+    width: 460px;
+    height: 290px;
+    padding: 0 100px 0 0;
+}

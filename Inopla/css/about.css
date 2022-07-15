@@ -1,0 +1,30 @@
+
+.header {
+    background: url('../img/sub-about-back.jpg') no-repeat;
+    height: 580px;
+}
+
+.sub-about {
+    background: #141414;
+}
+
+
+.sub-about-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 150px 0 100px 0;
+}
+
+.sub-about-content {
+    display: flex;
+}
+
+.sub-about-content p {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 154.5%;
+
+    color: #FFFFFF;
+}   

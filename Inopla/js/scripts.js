@@ -47,5 +47,26 @@ $(document).ready(function() {
 			]
 		}
 	)
+
+	$('.about-cta3-gallery').slick(
+		{
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			autoplay: false,
+			autoplaySpeed: 2000,
+			arrows: true,
+			dots: false,
+			infinite: false,
+			prevArrow: $('.cta3-gallery-arrow-left'),
+			nextArrow: $('.cta3-gallery-arrow-right')
+		}
+	)
+
+	$('.content-gallery').masonry({
+		itemSelector: '.content-gallery-image',
+		columnWidth: '.content-gallery-image',
+		percentPosition: true,
+		gutter: 10,
+	});
 });
 
