@@ -1,0 +1,69 @@
+
+.header {
+    background: url('../img/sub-products-back.jpeg') no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/sub-products-banner.png') no-repeat bottom right;
+    background-size: contain;
+    opacity: 0.4;
+}
+
+.sub-products {
+    background: url('../img/sub-products-concrete.jpg') no-repeat;
+    background-size: cover;
+}
+
+.sub-products-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 120px 0 100px 0;
+}
+
+.sub-products-container p {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 154.5%;
+
+    color: #FFFFFF;
+}
+
+.sub-products-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.sub-products-card {
+    background: #2F2F2F;
+    width: 310px;
+    height: 410px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-products-card p {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150.5%;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    padding-top: 20px;
+}

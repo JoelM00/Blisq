@@ -1,0 +1,29 @@
+
+.header {
+    background: url('../img/sub-support-header-back.png') no-repeat;
+    background-size: cover;
+}
+
+.sub-support {
+    background: url('../img/sub-support-back.jpg') no-repeat;
+    background-size: cover;
+}
+
+.sub-support-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.sub-support-container p {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 154.5%;
+    color: #ffffff;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}

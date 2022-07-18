@@ -17,6 +17,17 @@ body {
     width: 100%;
 }
 
+.header::after {
+    content: "";
+    background: url('../img/vetor.svg') no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 .header-container {
     max-width: 1400px;
     margin: 0 auto;
@@ -228,8 +239,7 @@ body {
 }
 
 .our-solutions-grid {
-    display: flex;
-    flex-direction: row;
+
 }
 
 .our-solutions-grid a {
@@ -326,7 +336,6 @@ body {
     line-height: 154.5%;
 
     color: #FFFFFF;
-    padding: 30px 0;
 }
 
 .footer-top h2 {
@@ -338,6 +347,8 @@ body {
     letter-spacing: 0.14em;
 
     color: #00B5AD;
+
+    margin-bottom: 10px;
 }
 
 .footer-bottom {
@@ -347,7 +358,6 @@ body {
 
 .footer-bottom-element:first-child {
     display: flex;
-    padding-left: 80px;
 }
 
 .footer-bottom-element:last-child {
@@ -397,6 +407,7 @@ body {
     z-index: 1;
     display: block;
     width: 100%;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu-container {
@@ -441,4 +452,35 @@ body {
 
 .menu-container a:hover {
     text-decoration: underline;
+}
+
+.solutions-task {
+	float: left;
+	opacity: 0;
+	animation: fadeIn 1s ease-in both;
+}
+
+.solutions-task :nth-child(2) {
+	animation-delay: 2s;
+}
+.solutions-task :nth-child(3) {
+	animation-delay: 3s;
+}
+.solutions-task :nth-child(4) {
+	animation-delay: 4s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0; 
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.grid-item {
+    margin-bottom: 10px;
 }

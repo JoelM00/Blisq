@@ -1,0 +1,73 @@
+
+.header {
+    position: relative;
+    background: url('../img/sub-production-back.jpg');
+}
+
+.sub-production {
+    background: url('../img/sub-production-concrete.jpg');
+}
+
+.sub-production-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 200px 0;
+}
+
+.sub-production-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-production-title p {
+    max-width: 450px;
+}
+
+.sub-production-title p {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 154.5%;
+
+    color: #FFFFFF;
+}
+
+.sub-production-title span {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 85.5%;
+
+    mix-blend-mode: normal;
+    opacity: 0.4;
+
+    color: #FFFFFF;
+
+}
+
+.sub-production-card {
+    background: #313131;
+    padding: 50px;
+    text-align: center;
+    max-width: 425px;
+    color: #FFFFFF
+}
+
+.sub-production-card h2 {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 154.5%;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.sub-production-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}

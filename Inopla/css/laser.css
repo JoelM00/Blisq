@@ -1,0 +1,87 @@
+
+.header {
+    background: none;
+    position: relative;
+}
+
+
+.video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 584px;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.sub-laser-container {
+ 
+}
+
+.sub-laser-top {
+    position: relative;
+    background: url('../img/sub-laser-concrete.jpg');
+    padding: 100px 300px 200px 300px;
+}
+
+.sub-laser-top-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.sub-laser-video {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.sub-laser-video video {
+    height: 714px;
+    width: 1316px;
+}
+
+.sub-laser-top-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-laser-top-content p {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 154.5%;
+    color: #FFFFFF;
+}
+
+.sub-laser-top::after {
+    content: "Qualidade e Rapidez";
+    position: absolute;
+
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 85.5%;
+    text-transform: uppercase;
+    
+    mix-blend-mode: normal;
+    opacity: 0.4;
+    
+    right: 471px;
+    bottom: -103px;
+    width: 582px;
+    
+    color: #FFFFFF;
+}
+
+
+.sub-laser-bottom {
+    background: #141414;
+    padding: 100px 300px 50px 300px;
+}
+
+.content-gallery {
+    max-width: 1400px;
+    margin: 0 auto; 
+}

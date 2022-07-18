@@ -2,6 +2,7 @@
 
 .header {
     background: url('../img/special-header-back.jpg') no-repeat;
+    background-size: cover;
     height: 580px;
 }
 
@@ -34,7 +35,8 @@
 
 
 .special-content {
-    background: url('../img/special-content-back.jpg');
+    background: url('../img/special-content-back.jpg') no-repeat;
+    background-size: cover;
     padding: 100px 0;
 }
 
@@ -44,7 +46,23 @@
 }
 
 
+
+.special-content p {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 154.5%;
+    color: #ffffff;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
 .footer {
     background: #141414;
     padding: 100px 0;
 }
+
+.grid-item { width: 200px; }

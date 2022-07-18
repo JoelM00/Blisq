@@ -2,6 +2,17 @@
 .standard {
     background: #141414;
     background-size: cover;
+    position: sticky;
+    top: -1px;
+}
+
+.concrete {
+    background: url('../img/about-concrete.jpg');
+    background-size: cover;
+}
+
+.standard {
+    
 }
 
 .standard-container {
@@ -11,21 +22,17 @@
 }
 
 .standard-content {
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    height: 600px;
+    align-items: center;
+    height: 500px;
 }
 
-.standard-content:nth-child(1){
-    background: url('../img/about-concrete.jpg');
-    background-size: cover;
-}
-.standard-content:nth-child(3) {
-    background: url('../img/about-concrete.jpg');
-    background-size: cover;
-}
 
 .standard-content-title {
+    position: relative;
     max-width: 200px;
 }
 
@@ -41,12 +48,23 @@
     color: #A9A8A5;
 }
 
-.standard-content-title span {
-    color: #00B5AD;
+.barra {
+    width: 120px;
+    height: 5px;
+    position: absolute;
+    background-color: #00b5ad;
+    display: block;
+    top: -20px;
+    left: 0;
+    z-index: 1;
 }
 
 .standard-content-images img {
     width: 460px;
     height: 290px;
     padding: 0 100px 0 0;
+}
+
+.blue {
+    color: #00B5AD;
 }

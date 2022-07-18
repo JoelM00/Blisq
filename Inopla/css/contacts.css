@@ -1,0 +1,50 @@
+
+.header {
+    background: url('../img/sub-contacts-back.jpeg');
+    position: relative;
+}
+
+.sub-contacts {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.sub-contacts-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    gap: 50px;
+}
+
+.sub-contacts-card h2 {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 154.5%;
+    letter-spacing: 0.14em;
+
+    color: #00B5AD;
+}
+
+.sub-contacts-card p, a{
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 154.5%;
+
+    color: #FFFFFF;
+}
+
+.horario {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 154.5%;
+    letter-spacing: 0.14em;
+
+    color: #6B6B6B;
+}
