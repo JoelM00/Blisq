@@ -1,11 +1,27 @@
 
 .header {
     position: relative;
-    background: url('../img/sub-production-back.jpg');
+    background: url('../img/sub-production-back.jpg') no-repeat;
+    background-size: cover;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left:   50%;
+    width: 50%;
+    height: 100%;
+    background: url('../img/production-banner.png');
+    background-size: contain;
+    opacity: 0.4;
 }
 
 .sub-production {
-    background: url('../img/sub-production-concrete.jpg');
+    position: relative;
+    background: url('../img/sub-production-concrete.jpg') no-repeat;
+    background-size: cover;
+    z-index: 20;
 }
 
 .sub-production-container {
@@ -39,12 +55,11 @@
     font-weight: 700;
     font-size: 120px;
     line-height: 85.5%;
-
     mix-blend-mode: normal;
     opacity: 0.4;
-
+    display: block;
     color: #FFFFFF;
-
+    max-width: 710px;
 }
 
 .sub-production-card {
@@ -52,7 +67,9 @@
     padding: 50px;
     text-align: center;
     max-width: 425px;
-    color: #FFFFFF
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
 }
 
 .sub-production-card h2 {
@@ -67,7 +84,31 @@
 }
 
 .sub-production-grid {
+    position: relative;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    padding: 200px 0 0 0;
+}
+
+.sub-production-grid::after {
+    content: "";
+    width: 120px;
+    height: 5px;
+    background-color: #00b5ad;
+    position: absolute;
+    top: 160px;
+    left: 0;
+    z-index: 1;
+}
+
+.sub-production-grid::before {
+    content: "";
+    width: 120px;
+    height: 5px;
+    background-color: #00b5ad;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    z-index: 1;
 }

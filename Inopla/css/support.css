@@ -5,6 +5,7 @@
 }
 
 .sub-support {
+    position: relative;
     background: url('../img/sub-support-back.jpg') no-repeat;
     background-size: cover;
 }

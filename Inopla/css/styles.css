@@ -9,6 +9,16 @@ body {
     margin: 0 auto;
 }
 
+button {
+    text-decoration: none;
+    background: none;
+    border: none
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 .header {
     position: relative;
     background: url('../img/header-back.png') no-repeat;
@@ -17,18 +27,21 @@ body {
     width: 100%;
 }
 
-.header::after {
+
+.header::before {
     content: "";
-    background: url('../img/vetor.svg') no-repeat;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    background: url('../img/vetor.svg') no-repeat;
+    background-position-y: top;
 }
 
+
 .header-container {
+    position: relative;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -239,7 +252,7 @@ body {
 }
 
 .our-solutions-grid {
-
+    max-width: 2000px;
 }
 
 .our-solutions-grid a {
@@ -249,8 +262,9 @@ body {
 .our-solutions-card {
     position: relative;
     width: 425px;
-    height: 500px;
-    background: url('../img/card-back.jpg');
+    height: 500px !important;
+    background: url('../img/card-back.jpg') no-repeat;
+    background-size: cover;
     padding: 20px;
 
 }
@@ -280,6 +294,7 @@ body {
     text-transform: uppercase;
 
     color: #FFFFFF;
+    z-index: 10;
 }
 
 
@@ -298,8 +313,8 @@ body {
 }
 
 .our-solutions-card-img img {
-    width: 343px;
-    height: 335px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -308,6 +323,10 @@ body {
 }
 
 /*Footer*/
+.footer {
+    position: relative;
+}
+
 .footer-container {
     max-width: 1400px;
     margin: 0 auto;
@@ -483,4 +502,8 @@ body {
 
 .grid-item {
     margin-bottom: 10px;
+}
+
+.slick-slide {
+    margin: 0 10px;
 }

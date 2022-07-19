@@ -11,7 +11,7 @@
     position: absolute;
     top: 20%;
     left: 0;
-    width: 100%;
+    width: 60%;
     height: 100%;
     background: url('../img/sub-products-banner.png') no-repeat bottom right;
     background-size: contain;
@@ -21,6 +21,7 @@
 .sub-products {
     background: url('../img/sub-products-concrete.jpg') no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .sub-products-container {

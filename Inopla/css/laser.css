@@ -1,7 +1,8 @@
 
 .header {
     background: none;
-    position: relative;
+    position: sticky;
+    top: 0;
 }
 
 
@@ -16,13 +17,20 @@
 }
 
 .sub-laser-container {
- 
+    max-width: 1400px;
+    margin: 0 auto;
 }
+
+.sub-laser {
+    position: relative;
+    background: url('../img/sub-laser-concrete.jpg');
+}
+
 
 .sub-laser-top {
     position: relative;
     background: url('../img/sub-laser-concrete.jpg');
-    padding: 100px 300px 200px 300px;
+    padding: 100px 0px;
 }
 
 .sub-laser-top-content {
@@ -33,6 +41,8 @@
 .sub-laser-video {
     max-width: 1400px;
     margin: 0 auto;
+    padding: 200px 0 0 0;
+    text-align: center;
 }
 
 .sub-laser-video video {
@@ -40,7 +50,12 @@
     width: 1316px;
 }
 
+.sub-laser-top {
+    padding: 200px 0;
+}
+
 .sub-laser-top-content {
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
@@ -52,7 +67,20 @@
     font-size: 18px;
     line-height: 154.5%;
     color: #FFFFFF;
+
+    max-width: 445px;
 }
+
+.sub-laser-top-content img {
+    position: absolute;
+    top: -325px;
+    right: 0;
+}
+
+.grid-item-image {
+    margin-bottom: 10px;
+}
+
 
 .sub-laser-top::after {
     content: "Qualidade e Rapidez";
@@ -68,7 +96,7 @@
     mix-blend-mode: normal;
     opacity: 0.4;
     
-    right: 471px;
+    right: 121px;
     bottom: -103px;
     width: 582px;
     
@@ -76,12 +104,6 @@
 }
 
 
-.sub-laser-bottom {
-    background: #141414;
-    padding: 100px 300px 50px 300px;
-}
-
-.content-gallery {
-    max-width: 1400px;
-    margin: 0 auto; 
+.sub-laser-grid {
+    padding: 100px 0px;
 }

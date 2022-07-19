@@ -5,8 +5,26 @@
     height: 580px;
 }
 
+.header::before {
+    content: "";
+    background: url('../img/about-banner.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+p {
+    max-width: 573px;
+}
+
 .sub-about {
     background: #141414;
+    position: relative;
+    padding-bottom: 20px;
 }
 
 
@@ -29,7 +47,7 @@
 .sub-about-content:nth-child(1) img {
     position: absolute;
     right: 0px;
-    top: -210px;
+    top: -230px;
     object-fit: contain;
     max-width: 666px;
 }
@@ -56,20 +74,24 @@
     z-index: 1;
 }
 
-.sub-about-content:nth-child(3) {
+.sub-about-bottom {
     background: url('../img/about-concrete.jpg') no-repeat;
+    background-size: cover;
+}
+
+.sub-about-bottom-container {
     position: relative;
-    margin: 200px 0 0 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
-.sub-about-content:nth-child(3) p {
-    padding: 150px 0;
+.sub-about-bottom-container p {
+    padding: 150px 0 175px 0;
+    width: 500px;
 }
 
-.sub-about-content:nth-child(3) .sub-about-gallery img {
-    width: 520px;
-    height: 486px;
-}
 
 .sub-about-content p {
     font-family: 'Chakra Petch';
@@ -80,3 +102,43 @@
 
     color: #FFFFFF;
 }   
+
+.sub-about-context p {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 154.5%;
+    color: #ffffff;
+    max-width: 573px;
+}
+
+.sub-about-slider {
+    position: absolute;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-left: 100px;
+    top: -10%;
+    right: -10%;
+    display: flex;
+}
+
+.sub-about-arrows {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+}
+
+.sub-about-gallery {
+    position: relative;
+    width: 900px;
+}
+
+.sub-about-gallery img {
+    width: 428px;
+    height: 396px;
+    margin: 0;
+}
+
+

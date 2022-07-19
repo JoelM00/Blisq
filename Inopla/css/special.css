@@ -1,9 +1,22 @@
 
-
 .header {
+    position: relative;
     background: url('../img/special-header-back.jpg') no-repeat;
     background-size: cover;
     height: 580px;
+
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 60%;
+    height: 100%;
+    background: url('../img/products-banner.png');
+    background-size: contain;
+    opacity: 0.4;
 }
 
 .header-title {
@@ -35,6 +48,7 @@
 
 
 .special-content {
+    position: relative;
     background: url('../img/special-content-back.jpg') no-repeat;
     background-size: cover;
     padding: 100px 0;
@@ -44,8 +58,6 @@
     max-width: 1400px;
     margin: 0 auto; 
 }
-
-
 
 .special-content p {
     font-family: 'Chakra Petch';
@@ -66,3 +78,7 @@
 }
 
 .grid-item { width: 200px; }
+
+.grid-item-image {
+    margin-bottom: 10px;
+}
