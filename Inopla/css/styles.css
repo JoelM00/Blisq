@@ -308,6 +308,8 @@ button:hover {
 }
 
 .our-solutions-card-img {
+    position: absolute;
+    bottom: 20px;
     padding-top: 20px;
     text-align: center;
 }
@@ -430,7 +432,9 @@ button:hover {
 }
 
 .menu-container {
-    padding: 60px 120px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 0;
     display: flex;
     justify-content: space-between;
 }
