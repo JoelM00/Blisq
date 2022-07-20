@@ -861,7 +861,10 @@ button:hover {
     }
     .solutions-task h2 {
         padding-top: 10px;
-    }    
+    } 
+    .solutions-task img {
+        width: 90%;
+    }   
 }
 
 @media (max-width: 445px) {
@@ -876,14 +879,18 @@ button:hover {
     }
     .header-content::before {
         top: 67%;
-        left: 61%;
+        left: 52%;
     }
     .header-content::after {
         top: 105%;
         left: 1%;
     }
+    .about-container img {
+        width: 100%;
+    }
     .our-solutions-arrows {
         gap: 7px;
+        flex-direction: column;
     }
     .footer-top-element:first-child img {
         width: 100%;
@@ -895,6 +902,29 @@ button:hover {
     }
 }
 
+@media (max-width: 360px) {
+    .about-content h2 {
+        font-size: 30px;
+    }
+    .solutions-container h2 {
+        font-size: 30px;
+    }
+    .solutions-task h2 {
+        font-size: 14px;
+    }
+    .solutions-task {
+        padding: 0px 10px;
+    }
+    .our-solutions h2 {
+        font-size: 30px;
+    }
+    .our-solutions-title {
+        flex-direction: column;
+    }
+    .our-solutions-arrows {
+        flex-direction: row;
+    }
+}
 
 @media (max-width: 330px) {
  
