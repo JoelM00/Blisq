@@ -1,4 +1,17 @@
 
+.header-content::before {
+    display: none;
+}
+
+.header-content::after {
+    display: none;
+}
+
+.header-content {
+    justify-content: space-between;
+}
+
+
 .header {
     position: relative;
     background: url('../img/sub-products-header.jpeg') no-repeat;

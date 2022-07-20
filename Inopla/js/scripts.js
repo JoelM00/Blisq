@@ -17,13 +17,33 @@ $(document).ready(function() {
 		infinite: true,
 		slidesToShow: 4,
 		slidesToScroll: 1,
-		autoplay: false,
+		autoplay: true,
 		autoplaySpeed: 1000,
 		speed: 200,
 		arrows: true,
 		dots: false,
 		prevArrow: $('.arrow-left'),
 		nextArrow: $('.arrow-right'),
+		responsive: [
+			{
+				breakpoint: 1280,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 800,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+		]
 	});
 			  
 
@@ -31,7 +51,7 @@ $(document).ready(function() {
 		slidesToShow: 2,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 2000,
+		autoplaySpeed: 1000,
 		arrows: true,
 		dots: false,
 		infinite: false,

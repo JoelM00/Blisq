@@ -1,4 +1,17 @@
 
+.header-content::before {
+    display: none;
+}
+
+.header-content::after {
+    display: none;
+}
+
+.header-content {
+    justify-content: space-between;
+}
+
+
 .header {
     background: url('../img/sub-contacts-back.jpeg') no-repeat;
     background-size: cover;

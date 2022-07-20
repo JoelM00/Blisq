@@ -1,7 +1,19 @@
 
+.header-content::before {
+    display: none;
+}
+
+.header-content::after {
+    display: none;
+}
+
 .header {
     background: url('../img/sub-support-header-back.png') no-repeat;
     background-size: cover;
+}
+
+.header-content {
+    justify-content: space-between;
 }
 
 .sub-support {
