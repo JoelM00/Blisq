@@ -473,7 +473,7 @@ button:hover {
 
 .active {
     top: 0;
-    z-index: 11;
+    z-index: 1100;
     width: 100%;
     transition: all 0.5s ease-in-out
 }
@@ -544,7 +544,6 @@ button:hover {
     letter-spacing: 0.14em;
     color: #ffffff;
     text-transform: uppercase;
-    position: relative;
 }
 
 .solutions-task {
@@ -647,7 +646,6 @@ button:hover {
 @media (max-width: 1280px) {
     .menu {
         height: 100vh;
-        z-index: 100;
         top: -100vh;
         width: 100%;
     }
@@ -661,8 +659,9 @@ button:hover {
         gap: 10px;
     }
     .menu-button-close {
-        position: relative;
-        right: -40%;
+        position: absolute;
+        right: 2%;
+        top: 5%;
     }
     .active {
         top: 0;
@@ -852,9 +851,9 @@ button:hover {
         font-size: 15px;
     }
     .about::before {
-        bottom: -50px;
-        width: 320px;
-        font-size: 58px;
+        bottom: -34px;
+        width: 219px;
+        font-size: 40px;
     }
     .solutions-container h2 {
         padding-top: 130px;
@@ -923,6 +922,9 @@ button:hover {
     }
     .our-solutions-arrows {
         flex-direction: row;
+    }
+    .footer-subelement p {
+        font-size: 16px;
     }
 }
 

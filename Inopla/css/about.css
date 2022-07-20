@@ -30,9 +30,6 @@
     opacity: 0.4;
 }
 
-p {
-    max-width: 573px;
-}
 
 .sub-about {
     background: #141414;
@@ -53,16 +50,13 @@ p {
     justify-content: space-between;
 }
 
-.sub-about-content:nth-child(1) {
-    margin: 100px 0;
-}
 
 .sub-about-content:nth-child(1) img {
     position: absolute;
     right: 0px;
     top: -230px;
     object-fit: contain;
-    max-width: 666px;
+    max-width: 55%;
 }
 
 .sub-about-content:nth-child(2) {
@@ -116,6 +110,10 @@ p {
     color: #FFFFFF;
 }   
 
+.sub-about-content p {
+    width: 44%;
+}
+
 .sub-about-context p {
     font-family: 'Chakra Petch';
     font-style: normal;
@@ -123,7 +121,7 @@ p {
     font-size: 18px;
     line-height: 154.5%;
     color: #ffffff;
-    max-width: 573px;
+    max-width: 43%;
 }
 
 .sub-about-slider {
@@ -154,4 +152,27 @@ p {
     margin: 0;
 }
 
+.footer {
+    background: #141414;
+}
 
+
+@media (max-width: 1500px) {
+    .sub-about-container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 1460px) {
+    
+}
+
+
+@media (max-width: 1333px) {
+}
+
+@media (max-width: 1020px) {
+    .header-title h2 {
+        font-size: 40px;
+    }
+}
