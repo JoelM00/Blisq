@@ -36,13 +36,13 @@
 
 .sub-laser {
     position: relative;
-    background: url('../img/sub-laser-concrete.jpg');
+    background: url('../img/sub-laser-concrete.jpg') no-repeat;
+    background-size: cover;
 }
 
 
 .sub-laser-top {
     position: relative;
-    background: url('../img/sub-laser-concrete.jpg');
     padding: 100px 0px;
 }
 
