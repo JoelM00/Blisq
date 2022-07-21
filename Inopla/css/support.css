@@ -40,3 +40,24 @@
     margin: 0 auto;
     margin-bottom: 20px;
 }
+
+.support-grid img {
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 1500px) {
+    .sub-support-container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 1020px) {
+    .sub-support-container {
+        max-width: 95%;
+    }
+    .support-grid img {
+        margin-bottom: 10px;
+        max-width: 200px;
+    }
+}

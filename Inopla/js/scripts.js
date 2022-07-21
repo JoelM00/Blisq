@@ -5,11 +5,11 @@ $(document).ready(function() {
 	});
 
 	$('.menu-button-close').on('click', function(){
-		$('.menu').toggleClass("active")
+		$('.menu').removeClass("active")
 	});
 
 	$('.menu-button-open').on('click', function(){
-		$('.menu').toggleClass("active")
+		$('.menu').addClass("active")
 	});
 	
 
@@ -50,17 +50,36 @@ $(document).ready(function() {
 	$('.sub-about-gallery').slick({
 		slidesToShow: 2,
 		slidesToScroll: 1,
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 1000,
 		arrows: true,
 		dots: false,
 		infinite: false,
 		prevArrow: $('.arrow-left'),
-		nextArrow: $('.arrow-right')
+		nextArrow: $('.arrow-right'),
+		responsive: [
+			{
+				breakpoint: 1460,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+			{
+				breakpoint: 1020,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 573,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+		]
 	})
 
 	$('.grid').masonry({
-		// options
 		itemSelector: '.grid-item-image',
 		columnWidth: '.grid-item-image',
 		gutter: 10,

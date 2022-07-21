@@ -16,6 +16,7 @@
     position: relative;
     background: url('../img/sub-products-header.jpeg') no-repeat;
     background-size: cover;
+    height: 580px;
 }
 
 .header::before {
@@ -25,20 +26,45 @@
     left: 40%;
     width: 60%;
     height: 100%;
-    background: url('../img/products-banner.png');
-    background-size: contain;
+    background: url('../img/products-banner.png') no-repeat;
+    background-size: cover;
     opacity: 0.4;
 }
+
+.header-title h2 {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 98%;
+    letter-spacing: 0.14em;
+    color: #fff;
+    text-align: left;
+}
+
+.header-content {
+    padding: 0;
+}
+
+.header-content span {
+    width: 120px;
+    height: 5px;
+    background-color: #00b5ad;
+    display: block;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}   
 
 .standard {
     background: #141414;
     background-size: cover;
     position: sticky;
     top: -1px;
+    z-index: 100;
 }
 
 .concrete {
-    background: url('../img/about-concrete.jpg');
+    background: url('../img/about-concrete.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -58,13 +84,13 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 500px;
+    padding: 100px 0;
 }
 
 
 .standard-content-title {
     position: relative;
-    max-width: 200px;
+    max-width: 333px;
 }
 
 .standard-content-title h2 {
@@ -99,3 +125,61 @@ p {
 .blue {
     color: #00B5AD;
 }
+
+.footer {
+    background: #141414;
+    padding: 65px 0;
+}
+
+
+
+
+@media (max-width: 1500px) {
+    .standard-content {
+        max-width: 95%;
+    }
+    .standard-content-title {
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 1420px) {
+    .header-content {
+        align-items: center;
+    }
+    .standard-content {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .standard-content-title {
+        max-width: 100%;
+        padding-bottom: 30px;
+    }
+    .standard-content-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 30px;
+    }
+    .standard-content-images img {
+        width: 50%;
+        height: auto;
+        padding: 0;
+    }
+    br {
+        display: none;
+    }
+}
+
+@media (max-width: 1020px) {
+    .header-title h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 630px) {
+    .standard-content-title h2 {
+        font-size: 30px;
+    }
+}
+

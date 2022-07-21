@@ -27,8 +27,8 @@
     left: 40%;
     width: 60%;
     height: 100%;
-    background: url('../img/products-banner.png');
-    background-size: contain;
+    background: url('../img/products-banner.png') no-repeat;
+    background-size: cover;
     opacity: 0.4;
 }
 
@@ -44,6 +44,7 @@
     line-height: 98%;
     letter-spacing: 0.14em;
     color: #fff;
+    text-align: left;
 }
 
 .header-content {
@@ -72,6 +73,15 @@
     margin: 0 auto; 
 }
 
+.special-grid {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.special-grid img {
+    margin-bottom: 10px;
+}
+
 .special-content p {
     font-family: 'Chakra Petch';
     font-style: normal;
@@ -90,8 +100,8 @@
     padding: 100px 0;
 }
 
-.grid-item { width: 200px; }
-
-.grid-item-image {
-    margin-bottom: 10px;
+@media (max-width: 1500px) {
+    .special-content-container {
+        max-width: 95%;
+    }
 }
