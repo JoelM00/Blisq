@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useQuery, gql } from "@apollo/client";
+import ReactMarkdown from 'react-markdown' 
 
 const REVIEWS = gql`
   query GetReviews {
@@ -11,6 +12,14 @@ const REVIEWS = gql`
           title
           rating
           body
+          categories {
+            data {
+              id
+              attributes {
+                name
+              }
+            }
+          }
         }
       }
     }
@@ -30,8 +39,16 @@ export default function Homepage() {
         <div key={review.attributes.id} className="review-card">
           <div className="rating">{review.attributes.rating}</div>
           <h2>{review.attributes.title}</h2>
-          <small>console list</small>
-          <p>{review.attributes.body.substring(0, 200)}...</p>
+
+          {
+           review.attributes.categories.data.map(c => (
+              <small key={c.id}>{c.attributes.name}</small>
+            ))
+          }
+          
+          <ReactMarkdown> 
+            {review.attributes.body.substring(0, 200)}
+          </ReactMarkdown> 
           <Link to={`/details/${review.id}`}>Read more</Link>
         </div>
       ))}
