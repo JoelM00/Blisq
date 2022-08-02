@@ -32,6 +32,17 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "reviews"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": false
     }
   }
 }

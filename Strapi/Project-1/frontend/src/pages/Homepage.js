@@ -31,10 +31,9 @@ export default function Homepage() {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 
-  console.log(data);
-
   return (
     <div>
+      <Link to="/add"><p>Add New Review</p></Link>
       {data.reviews.data.map((review) => (
         <div key={review.attributes.id} className="review-card">
           <div className="rating">{review.attributes.rating}</div>

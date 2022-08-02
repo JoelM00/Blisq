@@ -6,6 +6,11 @@ import Homepage from './pages/Homepage'
 import ReviewDetails from './pages/ReviewDetails'
 import Category from './pages/Category'
 import SiteHeader from "./components/SiteHeader"
+import Filter from "./components/Filter"
+import Add from './pages/Add'
+import Edit from './pages/Edit'
+
+
 
 // Apollo client
 const client = new ApolloClient({
@@ -22,12 +27,20 @@ function App() {
           <SiteHeader />
           <Switch>
             <Route exact path="/">
+              <Filter/>
               <Homepage />
+            </Route>
+            <Route path="/add">
+              <Add />
+            </Route>
+            <Route path="/edit/:id">
+              <Edit />
             </Route>
             <Route path="/details/:id">
               <ReviewDetails />
             </Route>
             <Route path="/category/:id">
+              <Filter/>
               <Category />
             </Route>
           </Switch>

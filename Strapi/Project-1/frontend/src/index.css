@@ -35,6 +35,10 @@ a {
 }
 
 /* review list */
+.review-container {
+  position: relative
+}
+
 .review-card {
   background: white;
   margin: 60px auto;
@@ -58,4 +62,23 @@ a {
 .review-card small {
   margin-right: 10px;
   color: #777;
+}
+
+.buttons-container {
+  position: absolute;
+  display: block;
+  top: 98%;
+  left: 47%;
+}
+
+.delete-btn button {
+  padding: 16px 40px;
+  background: gray;
+  color: white;
+  border: none;
+}
+
+.delete-btn button:hover {
+  background-color: red;
+  cursor: pointer;
 }
