@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_layout_page_infos",
+  "info": {
+    "displayName": "pageInfo",
+    "icon": "award"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": false
+    },
+    "cover": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo-information"
+    }
+  }
+}
