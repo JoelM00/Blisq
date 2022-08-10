@@ -1,52 +1,77 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useQuery as UQ, gql } from "@apollo/client";
+import { API_URL } from '../config/global';
 
 const QUERY = gql`
   query GetHeader {
   	home {
       data {
-      	id
         attributes {
-          header {
-            id
-            options {
-              url
-              name
-          }
-        }
-      }
-    }
+          highlights {
+          	titulo 
+          	image {
+              data {
+                attributes {
+                  url
+              	}
+            	}
+          	}
+            card {
+              title
+              description
+              date
+              image {
+                data {
+                	attributes {
+                  	url
+              		}
+            		}
+              }
+              button {
+                url
+                name
+              }
+            }
+        	}
+      	}
+    	}
+  	}
   }
-}
 `;
 
 export default function siteHeader() {
   const { loading, error, data } = UQ(QUERY);
+  if (loading) return console.log("Loading...");
+  if (error) return console.log("Error...");
 
   return (
     <section className="highlights">
         <div className="highlights-container">
             <div className="highlights-top">
-                <h2>Destaques</h2>
+                <h2>{data.home.data.attributes.highlights.titulo}</h2>
                 <div className="highlights-buttons">
-                    <button className="btn-left"></button>
-                    <button className="btn-right"></button>
+                    <button className="btn-left"> <img src={API_URL + data.home.data.attributes.highlights.image.data.attributes.url} alt=""></img></button>
+                    <button className="btn-right"><img src={API_URL + data.home.data.attributes.highlights.image.data.attributes.url} alt=""></img></button>
                 </div>
             </div>
             <div className="highlights-bottom">
-                <div className="highlights-card">
+              {
+                data.home.data.attributes.highlights.card.map(c => (
+                  <div className="highlights-card">
                     <a href="./regional.html">
-                        <img src="./img/highlight-image.jpg" alt=""></img>
+                        <img src={API_URL + c.image.data.attributes.url} alt=""></img>
                     </a>
                     <div className="highlights-content">
                         <div className="highlights-options">
-                            <a href="./regional.html">Regional</a>
-                            <p>7 janeiro, 2012</p>
+                            <a href={c.button.url}>{c.button.name}</a>
+                            <p>{c.date}</p>
                         </div>
-                        <h2>dfagdfgadfgas</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sed placeat consequatur facilis voluptas cumque voluptatem odit explicabo incidunt temporibus similique voluptatum aut tempora sint mollitia debitis molestias, labore a!</p>
+                        <h2>{c.title}</h2>
+                        <p>{c.description}</p>
                     </div>
-                </div>
+                  </div>
+                ))
+              }
             </div>
         </div>
     </section>

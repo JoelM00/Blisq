@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_highlights_highlights",
+  "info": {
+    "displayName": "highlights",
+    "icon": "arrow-alt-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "card": {
+      "displayName": "card",
+      "type": "component",
+      "repeatable": true,
+      "component": "card.card"
+    }
+  }
+}

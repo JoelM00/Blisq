@@ -52,9 +52,6 @@ export default function siteBanner() {
   if (loading) return console.log("Loading...")
   if (error) return console.log("Error...")
 
-  console.log(data)
-  console.log()
-
   return (
     <section className="banner" style={{ backgroundImage: `url(${API_URL + data.home.data.attributes.banner.background.data.attributes.url})` }}>
         <div className="banner-top">

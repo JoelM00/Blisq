@@ -2,6 +2,7 @@ import React from "react";
 
 import Header from "../components/HeaderComponent"
 import Banner from "../components/BannerComponent"
+import Hightlights from "../components/HightlightsComponent"
 
 
 export default function Homepage() {
@@ -10,6 +11,7 @@ export default function Homepage() {
     <div>
         <Header></Header>
         <Banner></Banner>
+        <Hightlights></Hightlights>
     </div>
   );
 }

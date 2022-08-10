@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_card_cards",
+  "info": {
+    "displayName": "card",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "link.link"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}

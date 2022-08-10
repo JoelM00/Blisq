@@ -246,3 +246,142 @@ body {
 .banner-social li {
     padding: 0 20px;
 }
+
+/**/
+.highlights {
+    background: linear-gradient(to bottom, #6EEAC4 33.3%, #6EEAC4 33.3%, #6EEAC4 66.6%, #fff 66.6%);
+}
+
+.highlights-container {
+    position: relative;
+    max-width: 1445px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.highlights-top {
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    color: #061743;
+}
+
+.highlights-buttons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.highlights-buttons button {
+    height: 20px;
+    width: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-left {
+    background-color: transparent;
+    transform: rotateY(180deg);
+    transition: all .2s;
+}
+
+.btn-right {
+    background-color: transparent;
+    transition: all .2s;
+}
+
+.highlights-bottom {
+    column-gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(7, 390px);
+    overflow-x: scroll;
+    min-width: 100vw;
+    scrollbar-width: none;
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+
+.highlights-card {
+    background-color: #fff;
+    height: fit-content;
+}
+
+.highlights-bottom .highlights-card:nth-child(even) {
+    margin-top: 60px;
+}
+
+.highlights-card img {
+    width: 100%;
+    filter: grayscale(1);
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.highlights-card img:hover {
+    filter: none;
+    transition: all .2s;
+}
+
+.highlights-content {
+    padding: 15px 30px;  
+    box-shadow: 0px 0px 31px rgb(0 0 0 / 17%);
+    background-color: #fff;
+}
+
+.highlights-content h2 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 27px;
+
+    color: #061743;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.highlights-content h2:hover {
+    color: #6EEAC4;
+    transition: all .2s;
+}
+
+.highlights-content p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #061743;
+    opacity: 0.49;
+}
+
+
+.highlights-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}   
+
+.highlights-options a {
+    text-decoration: none;
+    color: #061743;
+    padding: 10px;
+    background: #6EEAC4;
+    border-radius: 20px;
+    transition: all .2s;
+}
+
+.highlights-options a:hover {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background: #061743;
+    border-radius: 20px;
+    transition: all .2s;
+}
+

@@ -1,6 +1,9 @@
 $(document).ready(function () {
 
     function adapteNewsFeed() {
+
+		console.log("ola")
+
 		var sizeFeed = $(".highlights-bottom").width();
 		var boxSize = $(".highlights-bottom .highlights-card").width();
 		var gapSize = $(".highlights-bottom").css("column-gap").replace(/[^-\d\.]/g, '');

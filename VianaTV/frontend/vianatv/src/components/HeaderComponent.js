@@ -40,8 +40,6 @@ export default function siteHeader() {
   if (loading) return console.log("Loading...");
   if (error) return console.log("Error...");
 
-  console.log(data)
-
   return (
     <header className="header">
         <div className="header-container">
