@@ -40,11 +40,11 @@ const BANNER = gql`
                 }
               }
             }
-      } 
+          } 
+        }
       }
     }
   }
-}
 `;
 
 export default function siteBanner() {

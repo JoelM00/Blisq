@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react'
 import { useQuery as UQ, gql } from "@apollo/client";
 import { API_URL } from '../config/global';
 

@@ -3,21 +3,24 @@ import { useQuery as UQ, gql } from "@apollo/client";
 import { API_URL } from '../config/global';
 
 const BANNER = gql`
-  query GetBanner {
+  query GetPrograms {
   	home {
       data {
       	id
         attributes {
+          
         }
       }
     }
   }
 `;
 
-export default function siteAuthor() {
+export default function sitePrograms() {
   const { loading, error, data } = UQ(BANNER);
   if (loading) return console.log("Loading...")
   if (error) return console.log("Error...")
+
+  console.log(data)
 
   return (
     <section class="programs">
